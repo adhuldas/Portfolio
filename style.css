@@ -200,14 +200,7 @@ nav {
   margin-bottom: 2rem;
 }
 
-/* Hero & Avatar */
-.hero {
-  display: flex;
-  align-items: center;
-  gap: 4rem;
-  margin-bottom: 8rem;
-  position: relative;
-}
+
 
 .avatar-container {
   flex-shrink: 0;
@@ -230,103 +223,7 @@ nav {
   position: relative;
 }
 
-/* --- Hero Header Row --- */
-.hero-header-row {
-  display: flex;
-  align-items: center;
-  gap: 4rem;
-  margin-bottom: 3rem;
-  width: 100%;
-}
 
-.hero-title-group {
-  flex: 1;
-}
-
-/* --- High-Fidelity Workspace Render --- */
-.mini-workspace {
-  flex: 0 0 400px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.workspace-img-container {
-  width: 100%;
-  position: relative;
-  animation: float-3d 4s ease-in-out infinite;
-  filter: drop-shadow(0 20px 40px rgba(0,0,0,0.5));
-  transition: transform 0.5s ease;
-}
-
-.workspace-img-container:hover {
-  transform: scale(1.02) rotateY(5deg);
-}
-
-.workspace-img-container img {
-  width: 100%;
-  border-radius: 2rem;
-  display: block;
-}
-
-/* Waving Hand */
-.wave-hand {
-  position: absolute;
-  top: 45%;
-  left: 35%;
-  font-size: 2.5rem;
-  transform-origin: bottom right;
-  animation: wave-hi 2s infinite ease-in-out;
-  pointer-events: none;
-  z-index: 5;
-  filter: drop-shadow(0 5px 10px rgba(0,0,0,0.3));
-}
-
-@keyframes wave-hi {
-  0%, 100% { transform: rotate(0deg); }
-  20% { transform: rotate(20deg); }
-  40% { transform: rotate(-10deg); }
-  60% { transform: rotate(20deg); }
-  80% { transform: rotate(-5deg); }
-}
-
-@keyframes float-3d {
-  0%, 100% { transform: translateY(0) rotate(0); }
-  50% { transform: translateY(-15px) rotate(1deg); }
-}
-
-.workspace-status {
-  margin-top: 1.5rem;
-  text-align: center;
-  font-family: monospace;
-  color: var(--primary-color);
-  font-weight: 600;
-  font-size: 0.85rem;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  background: rgba(99, 102, 241, 0.1);
-  padding: 0.4rem 0.8rem;
-  border-radius: 2rem;
-  border: 1px solid rgba(99, 102, 241, 0.2);
-  animation: pulse 2s infinite;
-}
-
-/* --- Responsive Adjustments --- */
-@media (max-width: 992px) {
-  .hero-header-row {
-    flex-direction: column;
-    gap: 2rem;
-    text-align: center;
-  }
-  
-  .mini-workspace {
-    flex: none;
-    width: 100%;
-    max-width: 400px;
-  }
-}
 
 /* Glass Card */
 .glass-card {
