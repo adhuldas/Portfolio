@@ -200,6 +200,35 @@ nav {
   margin-bottom: 2rem;
 }
 
+/* Terminal Typing Effect */
+.terminal-container {
+  min-height: 5.5rem; /* Space for 2-3 lines of text */
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.terminal-text {
+  font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+  font-size: 1.25rem;
+  color: #22c55e; /* Terminal Green */
+  line-height: 1.6;
+  text-shadow: 0 0 5px rgba(34, 197, 94, 0.4);
+}
+
+.cursor {
+  display: inline-block;
+  color: var(--text-main);
+  margin-left: 2px;
+  animation: blink 1s step-end infinite;
+  vertical-align: middle;
+}
+
+@keyframes blink {
+  from, to { opacity: 1; }
+  50% { opacity: 0; }
+}
+
 
 
 .avatar-container {

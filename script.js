@@ -20,6 +20,25 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(card);
     });
 
+    // Typewriter effect
+    const typewriter = document.getElementById('typewriter-text');
+    if (typewriter) {
+        const text = typewriter.getAttribute('data-text');
+        let i = 0;
+        const speed = 40; // ms per character
+
+        function type() {
+            if (i < text.length) {
+                typewriter.textContent += text.charAt(i);
+                i++;
+                setTimeout(type, speed);
+            }
+        }
+
+        // Start typing after a short delay
+        setTimeout(type, 1000);
+    }
+
     // Smooth smooth scroll for nav links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
